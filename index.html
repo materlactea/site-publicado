@@ -6,7 +6,11 @@
 <link rel="icon" href="/favicon.svg">
 <link rel="stylesheet" href="/capa.css">
 </head><body class="home">
-<div id="backdrop"><iframe src="https://www.youtube.com/embed/wRlg6aHjZVo?autoplay=1&mute=1&loop=1&playlist=wRlg6aHjZVo&controls=0&showinfo=0&modestbranding=1&playsinline=1&rel=0" allow="autoplay; encrypted-media" tabindex="-1" aria-hidden="true" title="vídeo de fundo"></iframe></div>
+<div id="backdrop"><div id="yt"></div></div>
+<script>
+function onYouTubeIframeAPIReady(){new YT.Player('yt',{videoId:'wRlg6aHjZVo',playerVars:{autoplay:1,mute:1,loop:1,playlist:'wRlg6aHjZVo',controls:0,modestbranding:1,playsinline:1,rel:0,disablekb:1},events:{onReady:function(e){e.target.mute();e.target.playVideo();var f=e.target.getIframe();f.setAttribute('tabindex','-1');f.setAttribute('aria-hidden','true');},onStateChange:function(e){if(e.data===1)document.getElementById('backdrop').className='playing';}}});}
+</script>
+<script src="https://www.youtube.com/iframe_api" async></script>
 <div id="tint"></div>
 
 <main><div class="content"><h1><small><b>cecilia cavalieri</b></small></h1><small><br/>
@@ -14,5 +18,6 @@
 <a href="/livros-books/">liiivros bookkks</a> <br/><a href="/aparicoes/">apariçõeees apppearances</a>
 </small><br/>
 <h1><small><a href="/cv/">cv</a><br/>
-<a href="/bio/">bio</a></small></h1><br/></div></main>
+<a href="/bio/">bio</a><br/>
+<a href="/links/">liiinks lllinks</a></small></h1><br/></div></main>
 </body></html>

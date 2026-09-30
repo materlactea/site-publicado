@@ -6,7 +6,11 @@
 <link rel="icon" href="/favicon.svg">
 <link rel="stylesheet" href="/capa.css">
 </head><body class="sub">
-<div id="backdrop"><iframe src="https://www.youtube.com/embed/wRlg6aHjZVo?autoplay=1&mute=1&loop=1&playlist=wRlg6aHjZVo&controls=0&showinfo=0&modestbranding=1&playsinline=1&rel=0" allow="autoplay; encrypted-media" tabindex="-1" aria-hidden="true" title="vídeo de fundo"></iframe></div>
+<div id="backdrop"><div id="yt"></div></div>
+<script>
+function onYouTubeIframeAPIReady(){new YT.Player('yt',{videoId:'wRlg6aHjZVo',playerVars:{autoplay:1,mute:1,loop:1,playlist:'wRlg6aHjZVo',controls:0,modestbranding:1,playsinline:1,rel:0,disablekb:1},events:{onReady:function(e){e.target.mute();e.target.playVideo();var f=e.target.getIframe();f.setAttribute('tabindex','-1');f.setAttribute('aria-hidden','true');},onStateChange:function(e){if(e.data===1)document.getElementById('backdrop').className='playing';}}});}
+</script>
+<script src="https://www.youtube.com/iframe_api" async></script>
 <div id="tint"></div>
 <a class="home-link" href="/">← cecilia cavalieri</a>
 <main><div class="content"><div class="embed"><iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/570419133?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="CECILIA CAVALIERI &amp;amp; JULIANA FAUSTO / LABSONICA OI FUTURO"></iframe><br/>
